@@ -33,7 +33,7 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
     *
 * [Николаева Софья Сергеевна](https://github.com/sofya365)
 
-    * 
+    * Создание бд и ее er-диаграммы 
 
 
 

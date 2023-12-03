@@ -28,7 +28,7 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
   
     * Развернуть базу данных на web-сервере db4free.net
     * 
-* [Теничкая Вероника Юрьевна](https://github.com/tenitskayav)
+* [Теницкая Вероника Юрьевна](https://github.com/tenitskayav)
   
     *
 * [Николаева Софья Сергеевна](https://github.com/sofya365)

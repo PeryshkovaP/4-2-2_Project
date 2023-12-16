@@ -24,13 +24,10 @@ HeartDisease TINYINT
 );
 
 INSERT INTO patients(id, age, sex) VALUES
-(1, 40, M)
+(1, 40, 'M');
 
-INSERT INTO medicalexam(id, ChestPainType, RestingBP, Cholesterol, FastingBS, MaxHR, ExerciseAngina, Oldpeak) VALUES
-(1, ATA, 140, 289, 0, Normal, 172, N, 0)
-
-ALTER TABLE patients
-    ADD CONSTRAINT patients_pk PRIMARY KEY (id);
+INSERT INTO medicalexam(id, ChestPainType, RestingBP, Cholesterol, FastingBS, MaxHR, ExerciseAngina, Oldpeak, ST_slope, HeartDisease) VALUES
+(1, 'ATA', 140, 289, 0, 'Normal', 172, 'N', 0, 'Up', 0);
 
 ALTER TABLE medicalexam
     ADD CONSTRAINT medicalexam_pk PRIMARY KEY (id);

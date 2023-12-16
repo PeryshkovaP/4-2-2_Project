@@ -51,7 +51,7 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 * [Рычкова Алена Сергеевна](https://github.com/aaalenushkaa)
   
     - [ ] Развернуть базу данных на web-сервере [db4free.net](https://db4free.net/);
-    - [ ] Создание ER-диаграммы;
+    - [x] Создание ER-диаграммы;
     - [ ] Нормализация данных БД.
    
 * [Теницкая Вероника Юрьевна](https://github.com/tenitskayav)
@@ -61,7 +61,7 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 
 * [Николаева Софья Сергеевна](https://github.com/sofya365)
 
-    - [ ] Создание БД и ее ER-диаграммы;
+    - [x] Создание БД и ее ER-диаграммы;
     - [ ] Проверка заполнения данных.
 
 

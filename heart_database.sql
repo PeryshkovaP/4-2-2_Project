@@ -1,4 +1,3 @@
--- DDL Generated from https:/databasediagram.com
 CREATE DATABASE IF NOT EXISTS `heart` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 USE `heart`;
@@ -10,7 +9,7 @@ CREATE TABLE IF NOT EXISTS patients (
 );
 
 CREATE TABLE IF NOT EXISTS medicalexam (
-id INT REFERENCES patients(id),
+id INT NOT NULL PRIMARY KEY auto_increment REFERENCES patients(id),
 ChestPainType VARCHAR(100) NOT NULL,
 RestingBP INT NOT NULL,
 Cholesterol INT NOT NULL,
@@ -23,14 +22,12 @@ ST_Slope VARCHAR(100) NOT NULL,
 HeartDisease TINYINT
 );
 
-INSERT INTO patients(id, age, sex) VALUES
-(1, 40, 'M');
+INSERT INTO patients(age, sex) VALUES
+(40, 'M');
 
-INSERT INTO medicalexam(id, ChestPainType, RestingBP, Cholesterol, FastingBS, RestingECG, MaxHR, ExerciseAngina, Oldpeak, ST_slope, HeartDisease) VALUES
-(1, 'ATA', 140, 289, 0, 'Normal', 172, 'N', 0, 'Up', 0);
+INSERT INTO medicalexam(ChestPainType, RestingBP, Cholesterol, FastingBS, RestingECG, MaxHR, ExerciseAngina, Oldpeak, ST_slope, HeartDisease) VALUES
+('ATA', 140, 289, 0, 'Normal', 172, 'N', 0, 'Up', 0);
 
+    
 ALTER TABLE medicalexam
-    ADD CONSTRAINT medicalexam_pk PRIMARY KEY (id);
-
-ALTER TABLE patients
-    ADD CONSTRAINT fk_patients_id FOREIGN KEY (id) REFERENCES medicalexam(id);
+    ADD CONSTRAINT fk_medicalexam_id FOREIGN KEY (id) REFERENCES patients(id);

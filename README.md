@@ -57,7 +57,7 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 * [Теницкая Вероника Юрьевна](https://github.com/tenitskayav)
   
     - [ ] Заполнение БД данными;
-    - [ ] Тестирование БД.
+    - [x] Тестирование БД.
 
 * [Николаева Софья Сергеевна](https://github.com/sofya365)
 

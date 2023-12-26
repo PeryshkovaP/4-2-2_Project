@@ -110,9 +110,19 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 
 ![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/3efaaf0a-8faf-46ba-89ec-4c9890c15a72)
 
-Также я записала информацию о каждой колонке, чтобы иметь представление о том, какие данные включает в себя этот файл
+Также я записала информацию о каждой колонке, чтобы иметь представление о том, какие данные включает в себя этот файл.
 
 ![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/3970d583-e788-4e19-8ae3-8393fdf4cd2e)
+
+Сначала сделаем диаграмму по таким параметрам как возраст и пол:
+
+![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/3f675bcc-ebb5-47ae-8ff3-297236894a67)
+
+В результате у нас выводится вот такая гистограмма:
+
+![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/87cec315-32a4-4662-bbb6-a2dd764d954d)
+
+
 
 
 

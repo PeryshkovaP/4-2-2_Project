@@ -65,7 +65,8 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 ![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/146061871/3a47752d-ae09-42b4-b42d-4b824dc347c4)
 
 ### Визуализация данных в Python
->
+
+> [image](https://sun9-6.userapi.com/impg/58xWMvzPcghhvYAtSKSpJPf5CGXGN576OgdACQ/NvkuGm-dfTA.jpg?size=470x147&quality=96&sign=0360f32c3d34c53dfb42b7e78912c1d0&type=album)
 
 
 ## Участники проекта 
@@ -73,14 +74,14 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 * [Перышкова Полина Сергеевна](https://github.com/PeryshkovaP)
 
     - [x] Распределение задач между участниками проекта;
-    - [ ] Отслеживание прогресса выполнения задач;
+    - [x] Отслеживание прогресса выполнения задач;
     - [x] Создание коллективного проекта с доступом на редактирование;
-    - [ ] Визуализация данных в Python;
-    - [ ] Тестирование и проверка выполнения задач.
+    - [x] Визуализация данных в Python;
+    - [x] Тестирование и проверка выполнения задач.
     
 * [Рычкова Алена Сергеевна](https://github.com/aaalenushkaa)
   
-    - [ ] Развернуть базу данных на web-сервере [db4free.net](https://db4free.net/);
+    - [x] Развернуть базу данных на web-сервере [db4free.net](https://db4free.net/);
     - [x] Создание ER-диаграммы;
     - [x] Нормализация данных БД.
    

@@ -69,7 +69,8 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 
 ### Визуализация данных в Python
 
-> [image](https://sun9-6.userapi.com/impg/58xWMvzPcghhvYAtSKSpJPf5CGXGN576OgdACQ/NvkuGm-dfTA.jpg?size=470x147&quality=96&sign=0360f32c3d34c53dfb42b7e78912c1d0&type=album)
+![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/9ea0aa77-8454-4c16-b25a-d50b2f216f4b)
+
 
 
 ## Участники проекта 

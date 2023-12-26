@@ -115,7 +115,19 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 
 ![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/b423a609-cad4-4d9f-8714-e7bc10f22e1e)
 
+Теперь создадим круговую диаграмму. В качестве параметра выберем ChestPainType.
 
+Находим уникальные значения в ChestPainType. Они нам пригодятся для названий каждой части (label):
+
+![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/db8554e0-cb5a-4706-90ab-6d378d688bd0)
+
+Затем мы ищем количество по каждому типу ChestPainType:
+
+![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/7850647e-da08-42b7-a322-eb0d969ba7d0)
+
+В конечно итоге пишем код для создания круговой диаграммы:
+
+![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/bcb507f4-2129-4608-90b7-b640c5d11b3c)
 
 
 

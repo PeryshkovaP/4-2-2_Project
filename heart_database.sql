@@ -1,3 +1,4 @@
+-- DDL Generated from https:/databasediagram.com
 CREATE DATABASE IF NOT EXISTS `heart` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 USE `heart`;
@@ -25,21 +26,8 @@ HeartDisease TINYINT
 INSERT INTO patients(age, sex) VALUES
 (40, 'M');
 
-<<<<<<< HEAD
 INSERT INTO medicalexam(id, ChestPainType, RestingBP, Cholesterol, FastingBS, RestingECG, MaxHR, ExerciseAngina, Oldpeak, ST_slope, HeartDisease) VALUES
-('ATA', 140, 289, 0, 'Normal', 172, 'N', 0, 'Up', 0);
-=======
-INSERT INTO medicalexam(ChestPainType, RestingBP, Cholesterol, FastingBS, RestingECG, MaxHR, ExerciseAngina, Oldpeak, ST_slope, HeartDisease) VALUES
-('ATA', 140, 289, 0, 'Normal', 172, 'N', 0, 'Up', 0);
->>>>>>> 8bccbe754bcbb46c5eca2a519ff698a9cce7761f
+(1, 'ATA', 140, 289, 0, 'Normal', 172, 'N', 0, 'Up', 0);
 
-<<<<<<< HEAD
 ALTER TABLE patients
     ADD CONSTRAINT fk_patients_id FOREIGN KEY (id) REFERENCES medicalexam(id);
-
-=======
-    
-ALTER TABLE medicalexam
-    ADD CONSTRAINT fk_medicalexam_id FOREIGN KEY (id) REFERENCES patients(id);
-
->>>>>>> 8bccbe754bcbb46c5eca2a519ff698a9cce7761f

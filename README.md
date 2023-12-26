@@ -83,6 +83,12 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
  ![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/146061871/aa8fa967-590f-4f3a-9b70-3c9f9ae36c79)
 4. Затем мы удаляем таблицы "patients" и "medicalexam" из нашей бд и создаем их снова, но не включаем в них столбцы "id". Поочередно заполняем таблицы данными, использую копирование данных из таблицы "dataset".![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/146061768/e836289b-ae29-4f3d-9bce-8ad697c079f1)
 5. После импорта данных, добавляем в наши таблицы поле "id" и первичный ключ.
+   ![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/146061768/10dbded7-6ba1-4705-923a-90e5ea8a5457)
+   ![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/146061768/5c7d2fe1-b01a-457d-a694-b0bce6893beb)
+   ![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/146061768/e328bc81-11ea-4e62-9a54-7e6774f10d6d)
+
+
+
 
 ## Дополнительные задачи
 

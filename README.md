@@ -27,7 +27,13 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 
 Для этого в MYSQL Workbench нужно сверху слева нажать на окошко Database--->Reverse Engineer...--->далее появится окошко с параметрами, нужно нажать Next-->в окошке появится выбор по какой базе данных создать таблицы Select Schemas to Reverse Engineer, выбираем нужную нам схему(в нашем случае это heart)-->Finish-->таблицы создались, но без связи. Для их построения мы используем связь 1:n, нажимаем на нужный нам атрибут в первой таблице и соединяем(нажатием на атрибуты) со второй таблицей. 
 ![image](https://psv4.userapi.com/c909218/u275446108/docs/d58/3b5d10cea631/Snimok_ekrana_2023-12-26_190537.png?extra=nTFrqY7ziKR-uo6jlfwqM5OHycy9jAaY9-N5HefngOedg71Ooo9adeo5dDcPz5FhTOIBsm0ueyPNfIsKig7-dqBQPf9KoOxxbjutU3aT-1UIAw9-IG9oQCC37desWQSXmlufMxJEnKS_D-NaqcSwhW5uug)
-
+![image](https://psv4.userapi.com/c909218/u275446108/docs/d17/94dfa00bc32f/Snimok_ekrana_2023-12-26_193250.png?extra=UJjBPMSYx3VG4z-e0FPeWyCD5dkdRmRqXJSCZtFRrQWXQ9QqutgE_9nEAUQzgWYFezREZlP5Us850taC3fEI6aoAKjLa3ZAgSqBpBMlTbqb1O71_TPM4NnhYkLf4waf7hJxE4_hcdpP0Thcj3GUf6QhJtg)
+![image](https://psv4.userapi.com/c909418/u275446108/docs/d23/24de1817ae1a/Snimok_ekrana_2023-12-26_193454.png?extra=5APllJvr-LcdtnZa6UT4Mc04LMGF-yG3vT1WlpFqk70KNEEWkEspzv_FjdQZLkaR-L4C6TR2MsKmVeIEOSugW561yHVAbZzHXzAyGKlElBdk6RrEBXgTld03vkXYpOcFVdgt4bqdPLR-OEhU3wG3TTI15g)
+![image](https://psv4.userapi.com/c236331/u275446108/docs/d59/f58133d6be71/Snimok_ekrana_2023-12-26_193642.png?extra=KBlt2abHoAhb9Smgf_otVRnWzQJ8cvcYhSVpGIhoSSXjxPhLRYMPpJWdZu28muCSV-41xf53t8yaiE0MfrIxaOLGtNX1J5eIf6ye4BSNl6CdDZ20JpwMPNToIPYwGojJKqK2YJ3DDKzQKzKB8q5k03rucQ)
+![image](https://psv4.userapi.com/c909618/u275446108/docs/d40/c2e957918042/Snimok_ekrana_2023-12-26_193756.png?extra=2FXQ-c7anuf_AFs1MiFUi4HVnt2QBD2vzXZ1dCjbFF87mxWsEN5OnaO4s2URvaw6sCFgj7OC87rjaU_xZZOsMfarzx4yCl6rtcch3JReFjjt4Tj2aRKhy0YAxDnnPEgHK9_NpGQZ0Q5G3wpMxpzxMiWhew)
+![image](https://psv4.userapi.com/c909418/u275446108/docs/d42/d7a03368760d/Snimok_ekrana_2023-12-26_194029.png?extra=LwZayf6c-463sfJJktHyF013w3umImSbXcdrFFyRFCfImEda27eY9vAjzJi48Rqqt12hRxS-Vi_IRD4SbYkuju28XJ_CC0gEkCJOYE5C5sIvCiAM0xIVDBg_3sM2nL54bEQiBPhuvOfAoFCYA6c2vl_8qg)
+![image]()
+![image]()
 Связь между двумя таблицами задается через соответствие PK в одной таблице FK во второй. Можно сказать, FK в одной таблице – это один или несколько столбцов, значения которых соответствуют PK в другой таблице. В нашем случае первичным ключом(Primary Key, PK) является id пациента в таблице patients, а внешним ключом(Foreign Key, FK) id в таблице medicalexam.
 
 ### Нормализация данных
@@ -54,13 +60,7 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 
 ### Заполнение БД данными
 >
-1. Сначала, для импорта данных, мы добавляем csv-файл "heart" в папку, где содержится скрипт создания нашей базы данных.
-2. Потом мы создаем таблицу "dataset", в которой будут содержаться все колонки из исходного csv-файла.![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/146061871/b4c18fe8-10a1-4eb2-99fd-13c2c83b3f0d)
-3. Далее пишем скрипт выгрузки данных из файла "heart.csv" в таблицу "dataset".
-![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/146061871/aa8fa967-590f-4f3a-9b70-3c9f9ae36c79)
-4. Затем мы удаляем таблицы "patients" и "medicalexam" из нашей бд и создаем их снова, но не включаем в них столбцы "id". Поочередно заполняем таблицы данными, использую копирование данных из таблицы "dataset".
-![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/146061768/703430c7-619f-4e44-95d5-3a52ac7670fc)
-5. После импорта данных, добавляем в наши таблицы поле "id" и первичный ключ.
+1.
 
 ## Дополнительные задачи
 
@@ -75,25 +75,12 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 
 ### Визуализация данных в Python
 
-> Мы будем визуализировать данные в Google Colab с использованием нескольких библиотек и нашего файла heart.csv
-
-Для начала нам необходимо импортировать библиотеки, которые могут пригодиться для дальнейшей визуализации
-
-Коротко об каждой библиотеке:
-* pandas - это библиотека Python для обработки и анализа структурированных данных, в нашем случае мы будем работать с файлом формата csv: heart.csv;
-* matplotlib.pyplot - это библиотека на языке Python для визуализации данных. В ней можно построить двумерные (плоские) и трехмерные графики;
-* math - это модуль предоставляет обширный функционал для работы с числами;
-* seaborn -  библиотека для создания статистических графиков на Python. Она построена на основе matplotlib и тесно интегрируется со структурами данных pandas;
-* plotly.express - библиотека для визуализации данных.
-
 ![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/9ea0aa77-8454-4c16-b25a-d50b2f216f4b)
 
-Для того, чтобы нам работать с файлом, необходимо его загрузить в Google Colab.
 
-1. Заходим в раздел "Файлы"
- 
-![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/f3f23d8f-3a92-4e05-ab17-33fed3ea8866)
 
+<<<<<<< HEAD
+=======
 2. Нажимаем "Загрузить в сессионное хранилище"
 
 ![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/9484ce5a-7ea9-4501-be68-a1b89a37b287)
@@ -136,6 +123,7 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 
 
 
+>>>>>>> 7c7c5841f0ec1a1f6e0f004ec6b7c77502d340be
 ## Участники проекта 
 
 * [Перышкова Полина Сергеевна](https://github.com/PeryshkovaP)

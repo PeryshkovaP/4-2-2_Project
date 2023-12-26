@@ -31,6 +31,7 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 5. INSERT INTO patients(...) VALUES (...) - Эта команда вставляет одну строку данных в таблицу "patients" со значениями заданными в скобках.
 
 6. INSERT INTO medicalexam(...) VALUES (...) - Эта команда вставляет одну строку данных в таблицу "medicalexam" со значениями заданными в скобках.
+Пункты 5 и 6 для проверки
 
 7. ALTER TABLE medicalexam ADD CONSTRAINT medicalexam_pk PRIMARY KEY (id); - Эта команда добавляет первичный ключ "id" для таблицы "medicalexam".
 

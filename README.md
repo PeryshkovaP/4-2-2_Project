@@ -88,6 +88,28 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 
 ![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/9ea0aa77-8454-4c16-b25a-d50b2f216f4b)
 
+Для того, чтобы нам работать с файлом, необходимо его загрузить в Google Colab.
+
+1. Заходим в раздел "Файлы"
+ 
+![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/f3f23d8f-3a92-4e05-ab17-33fed3ea8866)
+
+2. Нажимаем "Загрузить в сессионное хранилище"
+
+![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/9484ce5a-7ea9-4501-be68-a1b89a37b287)
+
+3. Откроется проводник с файлами. Нам необходимо выбрать файл heart.csv
+
+![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/12ef2ead-90ce-49f4-ac3c-25b566ad0616)
+
+4. Нажимаем "Открыть". Теперь наш файл загружен в Google Colab и с ним можно работать
+
+![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/d8c37361-c1fd-47ac-b625-a6671db1ace0)
+
+Теперь можно открыть наш csv при помощи библиотеки pandas. Выведем первые 5 строчек.
+
+![image](https://github.com/PeryshkovaP/4-2-2_Project/assets/147165843/3efaaf0a-8faf-46ba-89ec-4c9890c15a72)
+
 
 
 ## Участники проекта 

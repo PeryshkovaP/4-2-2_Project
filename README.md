@@ -32,8 +32,6 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 ![image](https://psv4.userapi.com/c236331/u275446108/docs/d59/f58133d6be71/Snimok_ekrana_2023-12-26_193642.png?extra=KBlt2abHoAhb9Smgf_otVRnWzQJ8cvcYhSVpGIhoSSXjxPhLRYMPpJWdZu28muCSV-41xf53t8yaiE0MfrIxaOLGtNX1J5eIf6ye4BSNl6CdDZ20JpwMPNToIPYwGojJKqK2YJ3DDKzQKzKB8q5k03rucQ)
 ![image](https://psv4.userapi.com/c909618/u275446108/docs/d40/c2e957918042/Snimok_ekrana_2023-12-26_193756.png?extra=2FXQ-c7anuf_AFs1MiFUi4HVnt2QBD2vzXZ1dCjbFF87mxWsEN5OnaO4s2URvaw6sCFgj7OC87rjaU_xZZOsMfarzx4yCl6rtcch3JReFjjt4Tj2aRKhy0YAxDnnPEgHK9_NpGQZ0Q5G3wpMxpzxMiWhew)
 ![image](https://psv4.userapi.com/c909418/u275446108/docs/d42/d7a03368760d/Snimok_ekrana_2023-12-26_194029.png?extra=LwZayf6c-463sfJJktHyF013w3umImSbXcdrFFyRFCfImEda27eY9vAjzJi48Rqqt12hRxS-Vi_IRD4SbYkuju28XJ_CC0gEkCJOYE5C5sIvCiAM0xIVDBg_3sM2nL54bEQiBPhuvOfAoFCYA6c2vl_8qg)
-![image]()
-![image]()
 Связь между двумя таблицами задается через соответствие PK в одной таблице FK во второй. Можно сказать, FK в одной таблице – это один или несколько столбцов, значения которых соответствуют PK в другой таблице. В нашем случае первичным ключом(Primary Key, PK) является id пациента в таблице patients, а внешним ключом(Foreign Key, FK) id в таблице medicalexam.
 
 ### Нормализация данных

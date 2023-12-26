@@ -29,5 +29,5 @@ INSERT INTO patients(age, sex) VALUES
 INSERT INTO medicalexam(id, ChestPainType, RestingBP, Cholesterol, FastingBS, RestingECG, MaxHR, ExerciseAngina, Oldpeak, ST_slope, HeartDisease) VALUES
 (1, 'ATA', 140, 289, 0, 'Normal', 172, 'N', 0, 'Up', 0);
 
-ALTER TABLE patients
-    ADD CONSTRAINT fk_patients_id FOREIGN KEY (id) REFERENCES medicalexam(id);
+ALTER TABLE medicalexam
+ADD CONSTRAINT fk_medicalexam_id FOREIGN KEY (id) REFERENCES patients(id);

@@ -20,18 +20,35 @@ CSV файл по данной теме - [Kaggle](https://www.kaggle.com/datase
 ### Создание базы данных
 >Создание базы данных – не самый сложный процесс, если действовать последовательно. Заострим внимание на формирование пустой БД. Данный вариант предусматривает два способа реализации – через специализированный язык, а также при помощи встроенного графического интерфейса.
 
+1. CREATE DATABASE IF NOT EXISTS heart /!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci / /!80016 DEFAULT ENCRYPTION='N' /; - Эта команда создает базу данных с именем "heart", если она еще не существует. Указаны дополнительные параметры, такие как набор символов и кодировка.
 
+2. USE heart; - Эта команда выбирает базу данных "heart" для выполнения всех последующих команд.
 
+3. CREATE TABLE IF NOT EXISTS patients (...) - Эта команда создает таблицу "patients" с тремя столбцами: "id" (целое число, основной ключ с автоинкрементом), "age" (целое число, обязательное поле) и "sex" (строка, обязательное поле).
 
+4. CREATE TABLE IF NOT EXISTS medicalexam (...) - Эта команда создает таблицу "medicalexam" с несколькими столбцами: "id" (целое число, ссылается на столбец "id" в таблице "patients"), "ChestPainType" (строка, обязательное поле), "RestingBP" (целое число, обязательное поле), "Cholesterol" (целое число, обязательное поле), и другими столбцами, которые указывают различные характеристики медицинского обследования.
+
+5. INSERT INTO patients(...) VALUES (...) - Эта команда вставляет одну строку данных в таблицу "patients" со значениями заданными в скобках.
+
+6. INSERT INTO medicalexam(...) VALUES (...) - Эта команда вставляет одну строку данных в таблицу "medicalexam" со значениями заданными в скобках.
+
+7. ALTER TABLE medicalexam ADD CONSTRAINT medicalexam_pk PRIMARY KEY (id); - Эта команда добавляет первичный ключ "id" для таблицы "medicalexam".
+
+8. ALTER TABLE patients ADD CONSTRAINT fk_patients_id FOREIGN KEY (id) REFERENCES medicalexam(id); - Эта команда добавляет внешний ключ "id" для таблицы "patients", который ссылается на столбец "id" в таблице "medicalexam".
+
+![image](https://psv4.userapi.com/c237031/u275446108/docs/d33/03c4825daebd/Snimok_ekrana_2023-12-26_204154.png?extra=KPN8HFEDWKvt7AMlN2XMPD68IVem9eJcabgUTNjfSOTpLbCVMfnXZwowh97kCYKZbJHhyoqWO4cqNqr2PeYxnXuAWg8lnqws8Xe_gxtGrZOCbZZC_eW1MKQ6ygYnYTa-rcXIL_Zh32_9HWUv8Lmy-qkcLw)
+![image](https://psv4.userapi.com/c236331/u275446108/docs/d44/80aaf3545e27/Snimok_ekrana_2023-12-26_204223.png?extra=MdCL1vlrEyGfFvMzyB-o5I-ns2P3Uv-ZZy9PBar_CHvb0XvOV6un2a2AbrNkUnVzUGM-sIyO7wwKdQk1I3RI6KGhrsUPFNV-zXp-ku6GdkctT7ZqHETPzNjf0l_0EVnSBAUolsyDUAskObEiwcWzBATRlA)
 
 ### Создание ER-диаграммы
 >Схема «сущность-связь» (также ERD или ER-диаграмма) — это разновидность блок-схемы(графическая модель), где показано, как разные атрибуты связаны между собой внутри системы. ER-диаграммы чаще всего используются для визуализации и описания структуры и связей между сущностями в базе данных. ER-диаграмма создается на основании базы данных, а именно по написанному ранее скрипту.
 
-Для этого в MYSQL Workbench нужно сверху слева нажать на окошко Database--->Reverse Engineer...--->далее появится окошко с параметрами, нужно нажать Next-->в окошке появится выбор по какой базе данных создать таблицы Select Schemas to Reverse Engineer, выбираем нужную нам схему(в нашем случае это heart)-->Finish-->таблицы создались, но без связи. Для их построения мы используем связь 1:n, нажимаем на нужный нам атрибут в первой таблице и соединяем(нажатием на атрибуты) со второй таблицей. 
+Для этого в MYSQL Workbench нужно сверху слева нажать на Database--->Reverse Engineer...--->далее появится окошко с параметрами, нужно нажать Next-->в окошке появится выбор по какой базе данных создать таблицы Select Schemas to Reverse Engineer, выбираем нужную нам схему(в нашем случае это heart)-->Finish-->таблицы создались, но без связи. Для их построения мы используем связь 1:n, нажимаем на нужный нам атрибут в первой таблице и соединяем(нажатием на атрибуты) со второй таблицей.
+
 ![image](https://psv4.userapi.com/c909218/u275446108/docs/d58/3b5d10cea631/Snimok_ekrana_2023-12-26_190537.png?extra=nTFrqY7ziKR-uo6jlfwqM5OHycy9jAaY9-N5HefngOedg71Ooo9adeo5dDcPz5FhTOIBsm0ueyPNfIsKig7-dqBQPf9KoOxxbjutU3aT-1UIAw9-IG9oQCC37desWQSXmlufMxJEnKS_D-NaqcSwhW5uug)
 ![image](https://psv4.userapi.com/c909218/u275446108/docs/d17/94dfa00bc32f/Snimok_ekrana_2023-12-26_193250.png?extra=UJjBPMSYx3VG4z-e0FPeWyCD5dkdRmRqXJSCZtFRrQWXQ9QqutgE_9nEAUQzgWYFezREZlP5Us850taC3fEI6aoAKjLa3ZAgSqBpBMlTbqb1O71_TPM4NnhYkLf4waf7hJxE4_hcdpP0Thcj3GUf6QhJtg)
 ![image](https://psv4.userapi.com/c236331/u275446108/docs/d59/f58133d6be71/Snimok_ekrana_2023-12-26_193642.png?extra=KBlt2abHoAhb9Smgf_otVRnWzQJ8cvcYhSVpGIhoSSXjxPhLRYMPpJWdZu28muCSV-41xf53t8yaiE0MfrIxaOLGtNX1J5eIf6ye4BSNl6CdDZ20JpwMPNToIPYwGojJKqK2YJ3DDKzQKzKB8q5k03rucQ)
 ![image](https://psv4.userapi.com/c909418/u275446108/docs/d42/d7a03368760d/Snimok_ekrana_2023-12-26_194029.png?extra=LwZayf6c-463sfJJktHyF013w3umImSbXcdrFFyRFCfImEda27eY9vAjzJi48Rqqt12hRxS-Vi_IRD4SbYkuju28XJ_CC0gEkCJOYE5C5sIvCiAM0xIVDBg_3sM2nL54bEQiBPhuvOfAoFCYA6c2vl_8qg)
+
 Связь между двумя таблицами задается через соответствие PK в одной таблице FK во второй. Можно сказать, FK в одной таблице – это один или несколько столбцов, значения которых соответствуют PK в другой таблице. В нашем случае первичным ключом(Primary Key, PK) является id пациента в таблице patients, а внешним ключом(Foreign Key, FK) id в таблице medicalexam.
 
 ### Нормализация данных
